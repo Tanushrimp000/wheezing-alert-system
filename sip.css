@@ -1,0 +1,315 @@
+```css
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef2f7;
+    color:#334155;
+    line-height:1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#93c5fd;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
+    background:white;
+    border-radius:15px;
+    margin:30px auto;
+    width:90%;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.hero h1{
+    font-size:2.8rem;
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.hero h3{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+.project-info{
+    margin-top:20px;
+    background:#f8fafc;
+    display:inline-block;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #2563eb;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:60px 10%;
+    margin:25px auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.06);
+}
+
+h2{
+    margin-bottom:25px;
+    color:#1e3a8a;
+    border-left:5px solid #2563eb;
+    padding-left:12px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   REPORT PDF
+========================= */
+
+iframe{
+    margin-top:20px;
+    border-radius:10px;
+    border:1px solid #cbd5e1;
+}
+
+/* =========================
+   POSTER SECTION
+========================= */
+
+.poster-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.poster-container img{
+    width:55%;
+    max-width:600px;
+    height:auto;
+    border:2px solid #ddd;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.poster-container img:hover{
+    transform:scale(1.02);
+}
+
+/* =========================
+   FIELD VISIT GALLERY
+========================= */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   TEAM PHOTO
+========================= */
+
+#team-photo{
+    text-align:center;
+}
+
+.team-picture{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.team-picture img{
+    width:70%;
+    max-width:800px;
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-left:4px solid #2563eb;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul{
+    padding-left:25px;
+}
+
+ol{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* =========================
+   BLOCKQUOTE
+========================= */
+
+blockquote{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:20px;
+    border-radius:8px;
+    font-style:italic;
+    font-size:18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    background:#0f172a;
+    color:white;
+    padding:30px;
+    margin-top:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .gallery img{
+        width:100%;
+        height:auto;
+    }
+
+    .poster-container img{
+        width:90%;
+    }
+
+    .team-picture img{
+        width:95%;
+    }
+
+    section{
+        padding:40px 6%;
+    }
+}
+```
